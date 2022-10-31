@@ -1,5 +1,5 @@
 ## Digital Summit Landing Page - Capstone 1
-This is my first Capstone Project as a Microverse Student. It's my final project for the first learning module. The project is an idea of a landing page for one of Africa's largest tech events for Entrepreneurs and Developers from accross the Globe.
+
 
 
 ### Built With
@@ -7,15 +7,7 @@ This is my first Capstone Project as a Microverse Student. It's my final project
 - CSS
 - JavaScript
 
-### Screenshots
 
-- Mobile Version
-
-![mobile-view](/assets/mobile-view.png)
-
-- Desktop Version
-
-![desktop-view](/assets/desktop.png)
 
 
 ### Live Demo 
@@ -49,8 +41,6 @@ To run the project do the following:
 - LinkedIn: [Bright Kportiklah](https://www.linkedin.com/in/bright-kportiklah-05512418a/)
 
 ### Contributing
-- [Ada Rachel](https://github.com/adarachel)
-- [Emmanuel Munyite](https://github.com/munyite001)
 
 ### Contributing
 🤝 Contributions, issues, and feature requests are welcome!
@@ -59,15 +49,13 @@ To run the project do the following:
 Give a ⭐️ if you like this project!
 
 ### Acknowledgments
-- Thanks to Microverse for the opportunity to learn and grow as a developer
-- Also, thanks to [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) for the design
+
 
 ### Credits
-UI/UX designed by [Cindy Shin](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) on Behance.
+
 
 ### 📝 License
 
 - This project is [MIT](https://github.com/BryteLitty/hello-microverse/blob/add-javascript-file/LICENSE) lincensed.
 
-Link to the project walkthrough: [Presentation](https://www.loom.com/share/91f292c34b4b4d1da36d7b402c481069)
 
