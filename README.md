@@ -1,19 +1,10 @@
-## Digital Summit Landing Page - Capstone 1
-
-
+## Awesome Books App
+A simple app that add books to a page dynamically
 
 ### Built With
 - HTML 
-- CSS
 - JavaScript
 
-
-
-
-### Live Demo 
-You can check the program live via:
-
-[Live Demo](https://brytelitty.github.io/first-capstone/)
 
 ### Getting Started 
 To get a local copy up and running follow these simple steps:
@@ -41,17 +32,11 @@ To run the project do the following:
 - LinkedIn: [Bright Kportiklah](https://www.linkedin.com/in/bright-kportiklah-05512418a/)
 
 ### Contributing
-
-### Contributing
 🤝 Contributions, issues, and feature requests are welcome!
 
 ### Show me love
 Give a ⭐️ if you like this project!
 
-### Acknowledgments
-
-
-### Credits
 
 
 ### 📝 License
