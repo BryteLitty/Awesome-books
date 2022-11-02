@@ -1,26 +1,3 @@
-// const books = [
-//     // {
-//     //     title: "The Valid Score",
-//     //     author: "Siri Amber",
-//     // },
-//     // {
-//     //     title: "Think and Grow Rich",
-//     //     author: "Napoleon Hill",
-//     // },
-//     // {
-//     //     title: "Rich Dad, Poor Dad",
-//     //     author: "Robert Kiyosaki",
-//     // },
-//     // {
-//     //     title: "Atomic Habits",
-//     //     author: "James Clear",
-//     // },
-//     // {
-//     //     title: "No Sweetness Here",
-//     //     author: "Ama Atta-Aiddo",
-//     // },
-// ]
-
 // get event listeners
 const titleInput = document.getElementById('title');
 const authorInput = document.getElementById('author');
@@ -49,9 +26,7 @@ function injectContent(arr) {
   arr.forEach((object) => {
     books += createCollection(object);
   });
-  // console.log(books)
   booksContainer.innerHTML = books;
-  // console.log(booksContainer.innerHTML)
 }
 
 injectContent(booksCollection);
