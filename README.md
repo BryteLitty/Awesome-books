@@ -36,7 +36,6 @@ To run the project do the following:
 - Twitter: [@Dsn3kings](https://twitter.com/Dsn3kings)
 - Linkedin: [Lugard Agu](https://www.linkedin.com/in/lugard-agu-45bb05b6)
 
-
 ### Contributing
 🤝 Contributions, issues, and feature requests are welcome!
 
