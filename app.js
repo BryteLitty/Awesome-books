@@ -20,7 +20,7 @@ function createCollection(book) {
       <div class="booklist">
         <article class="book">
           <div>
-            <p>"${book.title.charAt(0).toUpperCase() + book.title.slice(1)}" by ${book.author.charAt(0).toUpperCase() + book.author.slice(1)}</p>
+            <p>"${book.author.charAt(0).toUpperCase() + book.author.slice(1)}" by ${book.title.charAt(0).toUpperCase() + book.title.slice(1)}</p>
           </div>
           <div>
             <button class="removeBtn" id="${book.id}" type="submit">Remove</button>
@@ -49,7 +49,7 @@ function createBook(book) {
         <div class="booklist">
           <article class="book">
             <div>
-              <p>"${book.title.charAt(0).toUpperCase() + book.title.slice(1)}" by ${book.author.charAt(0).toUpperCase() + book.author.slice(1)}</p>
+              <p>"${book.author.charAt(0).toUpperCase() + book.author.slice(1)}" by ${book.title.charAt(0).toUpperCase() + book.title.slice(1)}</p>
             </div>
             <div>
               <button class="removeBtn" id="${book.id}" type="submit">Remove</button>
