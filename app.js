@@ -7,14 +7,26 @@ const booksContainer = document.querySelector('.books-container');
 // books collection
 let booksCollection = JSON.parse(localStorage.getItem('books-collection')) || [];
 
+class Book{
+  constructor(author, title, id){
+    this.author = author;
+    this.title = title;
+    this.id = id;
+  }
+}
+
 function createCollection(book) {
   const content = `
-        <div class="booklist">
-            <p>${book.title}</p>
-            <p>${book.author}</p>
+      <div class="booklist">
+        <article class="book">
+          <div>
+            <p>"${book.title.charAt(0).toUpperCase() + book.title.slice(1)}" by ${book.author.charAt(0).toUpperCase() + book.author.slice(1)}</p>
+          </div>
+          <div>
             <button class="removeBtn" id="${book.id}" type="submit">Remove</button>
-            <hr>
-        </div>
+          </div>
+        </article>
+      </div>
     `;
 
   return content;
@@ -35,10 +47,14 @@ injectContent(booksCollection);
 function createBook(book) {
   const booksMarkup = `
         <div class="booklist">
-            <p>${book.title}</p>
-            <p>${book.author}</p>
-            <button class="removeBtn" id="${book.id}" type="submit">Remove</button>
-            <hr>
+          <article class="book">
+            <div>
+              <p>"${book.title.charAt(0).toUpperCase() + book.title.slice(1)}" by ${book.author.charAt(0).toUpperCase() + book.author.slice(1)}</p>
+            </div>
+            <div>
+              <button class="removeBtn" id="${book.id}" type="submit">Remove</button>
+            </div>
+          </article>
         </div>
     `;
 
@@ -50,11 +66,11 @@ function addBook() {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const book = {
-      title: titleInput.value,
-      author: authorInput.value,
-      id: `${new Date().getTime().toString()}${Math.trunc(Math.random() * 100)}`,
-    };
+    let title = titleInput.value;
+    let author = authorInput.value;
+    let id = `${new Date().getTime().toString()}${Math.trunc(Math.random() * 100)}`;
+
+    const book = new Book(title, author, id)
 
     createBook(book);
     booksCollection.push(book);
@@ -68,10 +84,10 @@ addBook();
 
 // remove book
 booksContainer.addEventListener('click', (e) => {
-  const remBtn = e.target.closest('.removeBtn');
+  const removeBtn = e.target.closest('.removeBtn');
 
-  if (!remBtn) return;
-  const { id } = remBtn;
+  if (!removeBtn) return;
+  const { id } = removeBtn;
 
   booksCollection = booksCollection.filter((book) => book.id !== id);
 
