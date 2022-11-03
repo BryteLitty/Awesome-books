@@ -26,10 +26,16 @@ To run the project do the following:
 
 **NB**: To ensure that your code follows best practices and industry standard rules, please make use of [linters](https://github.com/microverseinc/linters-config/tree/master/html-css-js)
 
-##### Author
+### Author (1)
 - Github: [@BryteLitty](https://github.com/Bryte)
 - Twitter: [@bryteLitty](https://twitter.come/BryteLitty)
 - LinkedIn: [Bright Kportiklah](https://www.linkedin.com/in/bright-kportiklah-05512418a/)
+
+### Author (2)
+- GitHub: [@lugard1](https://github.com/lugard1)
+- Twitter: [@Dsn3kings](https://twitter.com/Dsn3kings)
+- Linkedin: [Lugard Agu](https://www.linkedin.com/in/lugard-agu-45bb05b6)
+
 
 ### Contributing
 🤝 Contributions, issues, and feature requests are welcome!
