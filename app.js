@@ -7,8 +7,8 @@ const booksContainer = document.querySelector('.books-container');
 // books collection
 let booksCollection = JSON.parse(localStorage.getItem('books-collection')) || [];
 
-class Book{
-  constructor(author, title, id){
+class Book {
+  constructor(author, title, id) {
     this.author = author;
     this.title = title;
     this.id = id;
@@ -66,11 +66,11 @@ function addBook() {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    let title = titleInput.value;
-    let author = authorInput.value;
-    let id = `${new Date().getTime().toString()}${Math.trunc(Math.random() * 100)}`;
+    const title = titleInput.value;
+    const author = authorInput.value;
+    const id = `${new Date().getTime().toString()}${Math.trunc(Math.random() * 100)}`;
 
-    const book = new Book(title, author, id)
+    const book = new Book(title, author, id);
 
     createBook(book);
     booksCollection.push(book);
