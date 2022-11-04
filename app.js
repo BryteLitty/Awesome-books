@@ -126,7 +126,6 @@ function displayComponents(id) {
       booksSection.style.display = "none";
       addBookSection.style.display = "none";
       contactSection.style.display = "block";
-      contactSection.style.backgroundColor = "red";
       break;
     default:
       booksSection.style.color = "block";
