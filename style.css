@@ -11,16 +11,7 @@ main {
   margin: 15px auto;
   text-align: center;
   background-color: #fff;
-}
 
-header {
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  width: 100%;
-  padding: 12px 0;
-}
-
-.heading {
-  margin: 20px 0;
 }
 
 .books-container {
@@ -33,11 +24,11 @@ header {
   width: 100%;
 }
 
-.booklist:nth-of-type(odd) {
+.booklist:nth-of-type(odd){
   background-color: rgb(235, 231, 231);
 }
 
-.book {
+.book{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -61,7 +52,7 @@ header {
 
 .removeBtn:hover {
   background-color: red;
-  transition: all ease-in-out 0.2s;
+  transition: all ease-in-out 0.2s
 }
 
 .line {
@@ -73,10 +64,11 @@ header {
 
 .book-form {
   width: 60%;
+  /* background-color: rebeccapurple; */
   margin: auto;
 }
 
-input {
+input{
   width: 100%;
   height: 50px;
   margin: 15px 0;
@@ -90,63 +82,4 @@ input {
   float: right;
   border-radius: 2px;
   margin-top: 10px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 10px 50px;
-}
-
-.nav-links {
-  list-style-type: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links :nth-child(2) {
-  border-right: solid rgb(90, 90, 90) 2px;
-  border-left: solid rgb(90, 90, 90) 2px;
-  padding: 0 15px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-}
-
-.display-date {
-  margin: 20px;
-  display: flex;
-  justify-content: right;
-}
-
-#contact {
-  margin-top: 10%;
-}
-
-#contact h1 {
-  margin: 15px 0;
-  font-size: 2.2em;
-  font-weight: 400;
-}
-
-.contact-details {
-  text-align: left;
-  font-size: 1.2rem;
-  font-weight: 300;
-}
-
-footer {
-  background-color: rgb(223, 217, 217);
-  position: fixed;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  padding: 40px 80px;
 }
