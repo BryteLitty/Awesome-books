@@ -14,13 +14,11 @@ setInterval(() => {
   currentTime.innerHTML = new Date();
 });
 
-document.addEventListener('DOMContentLoaded', displayComponents(navLinks))
-
 // books collection
 let booksCollection = JSON.parse(localStorage.getItem('books-collection')) || [];
 
-class Book{
-  constructor(author, title, id){
+class Book {
+  constructor(author, title, id) {
     this.author = author;
     this.title = title;
     this.id = id;
@@ -53,8 +51,6 @@ function injectContent(arr) {
   booksContainer.innerHTML = books;
 }
 
-
-
 // create book
 function createBook(book) {
   const booksMarkup = `
@@ -78,11 +74,11 @@ function addBook() {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    let title = titleInput.value;
-    let author = authorInput.value;
-    let id = `${new Date().getTime().toString()}${Math.trunc(Math.random() * 100)}`;
+    const title = titleInput.value;
+    const author = authorInput.value;
+    const id = `${new Date().getTime().toString()}${Math.trunc(Math.random() * 100)}`;
 
-    const book = new Book(title, author, id)
+    const book = new Book(title, author, id);
 
     createBook(book);
     booksCollection.push(book);
@@ -91,6 +87,7 @@ function addBook() {
     form.reset();
   });
 }
+injectContent(booksCollection);
 
 addBook();
 
@@ -107,46 +104,40 @@ booksContainer.addEventListener('click', (e) => {
   localStorage.setItem('books-collection', JSON.stringify(booksCollection));
 });
 
-
 function displayComponents(id) {
-  switch(id) {
-    case 'books-section': 
-      booksSection.style.display = "block";
-      addBookSection.style.display = "none";
-      contactSection.style.display = "none";
+  switch (id) {
+    case 'books-section':
+      booksSection.style.display = 'block';
+      addBookSection.style.display = 'none';
+      contactSection.style.display = 'none';
       break;
-    
-    case 'add-book-form': 
-      booksSection.style.display = "none";
-      addBookSection.style.display = "block";
-      contactSection.style.display = "none";
+
+    case 'add-book-form':
+      booksSection.style.display = 'none';
+      addBookSection.style.display = 'block';
+      contactSection.style.display = 'none';
       break;
-  
-    case 'contact': 
-      booksSection.style.display = "none";
-      addBookSection.style.display = "none";
-      contactSection.style.display = "block";
+
+    case 'contact':
+      booksSection.style.display = 'none';
+      addBookSection.style.display = 'none';
+      contactSection.style.display = 'block';
       break;
     default:
-      booksSection.style.color = "block";
-      addBookSection.style.display = "none";
-      contactSection.style.display = "none";
+      booksSection.style.color = 'block';
+      addBookSection.style.display = 'none';
+      contactSection.style.display = 'none';
   }
-};
-
-console.log(contactSection)
+}
 
 function navItemClicked(navLinks) {
   navLinks.forEach((item) => {
-    item.addEventListener('click', e => {
+    item.addEventListener('click', (e) => {
       const id = e.target.getAttribute('displayComponent');
-      console.log(id)
-      displayComponents(id)
-    })
-});
-};
+      displayComponents(id);
+    });
+  });
+}
 
-
-displayComponents(navLinks)
-injectContent(booksCollection);
-navItemClicked(navLinks)
+displayComponents(navLinks);
+navItemClicked(navLinks);
