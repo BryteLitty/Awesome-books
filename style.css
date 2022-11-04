@@ -14,7 +14,7 @@ main {
 }
 
 .books-container {
-  border: 1px solid rgb(184, 182, 182);
+  border: 1px solid rgb(184, 182, 182); 
 }
 
 .booklist {
@@ -37,6 +37,7 @@ main {
 .book p {
   font-weight: 300;
 }
+
 
 .removeBtn {
   border: none;
@@ -81,4 +82,39 @@ input{
   float: right;
   border-radius: 2px;
   margin-top: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 50px;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+.display-date {
+  display: flex;
+  justify-content: right;
+}
+
+footer {
+  background-color: rgb(223, 217, 217);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
