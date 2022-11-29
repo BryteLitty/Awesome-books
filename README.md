@@ -5,6 +5,7 @@ A simple app that add books to a page dynamically
 - HTML 
 - JavaScript
 
+[See Live Demo](https://brytelitty.github.io/Awesome-books/)
 
 ### Getting Started 
 To get a local copy up and running follow these simple steps:
@@ -35,7 +36,6 @@ To run the project do the following:
 - GitHub: [@lugard1](https://github.com/lugard1)
 - Twitter: [@Dsn3kings](https://twitter.com/Dsn3kings)
 - Linkedin: [Lugard Agu](https://www.linkedin.com/in/lugard-agu-45bb05b6)
-
 
 ### Contributing
 🤝 Contributions, issues, and feature requests are welcome!

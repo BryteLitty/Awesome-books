@@ -8,6 +8,7 @@
     <title>Awesome Books</title>
 </head>
 <body>
+<<<<<<< HEAD
   <h1>Awesome Book</h1>
   <div class="books-container">
     
@@ -18,14 +19,66 @@
     <div class="form-group">
      <label for="title"></label>
      <input type="text" placeholder="Title" id="title" name="title" required>
+=======
+  <header>
+    <nav>
+      <div class="logo">
+        <h1>Awesome Book</h1>
+      </div>
+      <div class="menu">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#" displayComponent="books-section">List</a></li>
+          <li class="nav-item"><a href="#" displayComponent="add-book-form">Add New</a></li>
+          <li class="nav-item"><a href="#" displayComponent="contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="display-date">
+      <p id="current-time"></p>
+>>>>>>> 2df6567561cef81ca3ae23ec0f02ff9f4934b7ab
     </div>
-    <br>
-    <div class="form-group">
-        <label for="author"></label>
-        <input type="text" placeholder="Author" id="author" name="author" required>
-    </div><br>
-    <button type="submit" class="addBtn">Add</button>
-  </form>
+  <main>
+    <section id="books-section">
+      <h1 class="heading">All Awesome Books</h1>
+      <div class="books-container">
+        <div class="booklist">
+            <!--   -->
+        </div>
+      </div>
+    </section>
+
+    <section id="add-book-form">
+          <form action="" id="book-form" class="book-form">
+            <div class="form-group">
+              <label for="title"></label>
+              <input type="text" placeholder="Title" id="title" name="title" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="author"></label>
+                <input type="text" placeholder="Author" id="author" name="author" required>
+            </div>
+            <button type="submit" class="addBtn">Add</button>
+          </form>
+    </section>
+
+    <section id="contact">
+      <h1>Contact Information</h1>
+      <div class="contact-details">
+        <p>Do you have any question or you just want to say "Hello"?<br>You can reach out to us!</p>
+        <ul>
+          <li>Our email: mail@awesome.books</li>
+          <li>Our Phone number: +2348035184236</li>
+          <li>Our Address: Plot 60 Booleyvard, Accra, Ghana.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <small>&copy; 2022 Awesome Books</small>
+  </footer>
 
   <script src="app.js"></script>    
 </body>
